@@ -1,0 +1,7 @@
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core.iOS\obj\iPhoneSimulator\Debug\optimized\
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core.iOS\obj\iPhoneSimulator\Debug\Fox.Core.iOS.csprojAssemblyReference.cache

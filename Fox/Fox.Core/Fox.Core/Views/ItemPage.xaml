@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MvxContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:abstractions="clr-namespace:CarouselView.FormsPlugin.Abstractions;assembly=CarouselView.FormsPlugin.Abstractions"
+                      xmlns:ffimage="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+                      xmlns:viewModels="clr-namespace:Fox.Core.ViewModels;assembly=Fox.Core"
+                      xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+                      xmlns:views1="clr-namespace:Fox.Core.Views"
+                      xmlns:badge1="clr-namespace:Fox.Core.Badge"
+                      x:Class="Fox.Core.Views.ItemPage"
+                      x:TypeArguments="viewModels:ItemViewModel">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+            <Grid x:Name="ScrollableArea">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <abstractions:CarouselViewControl Grid.Row="0"
+                                          ItemsSource="{Binding ItemModel.Images}"
+                                          ShowIndicators="True"
+                                          ShowArrows="False"
+                                          IndicatorsTintColor="LightGray"
+                                          CurrentPageIndicatorTintColor="DarkGray"
+                                          IndicatorsShape="Circle">
+                    <abstractions:CarouselViewControl.ItemTemplate>
+                        <DataTemplate>
+                            <ContentView>
+                                <ffimage:CachedImage Source="{Binding Content}"
+                                             Aspect="Fill"                                             
+                                             HorizontalOptions="FillAndExpand"
+                                             VerticalOptions="FillAndExpand">
+                                </ffimage:CachedImage>
+                            </ContentView>
+                        </DataTemplate>
+                    </abstractions:CarouselViewControl.ItemTemplate>
+                </abstractions:CarouselViewControl>
+                <badge1:BadgeView                              
+                            Text="NOVO" 
+                            BadgeColor="Red" 
+                            TextColor="White"
+                            VerticalOptions="StartAndExpand"
+                            HorizontalOptions="End"
+                            IsVisible="{Binding ItemModel.IsNew}"
+                            HeightRequest="30" WidthRequest="80"
+                            Margin="15,0,15,0">
+                </badge1:BadgeView>
+                <StackLayout Grid.Row="1">
+                    <Label Text="{Binding ItemModel.Name}"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" 
+                   FontSize="Medium"
+                   TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Lora-Bold" />
+                                <On Platform="Android" Value="Lora-Bold.ttf#Lora-Bold" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <StackLayout Grid.Row="2">
+                    <Label 
+                   Text="{Binding ItemModel.Price, StringFormat='{0:N} RSD'}"
+                   TextColor="Red"
+                   HorizontalOptions="Center"
+                   FontSize="Large"
+                   FontAttributes="Bold">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Hind-Bold" />
+                                <On Platform="Android" Value="Hind-Bold.ttf#Hind-Bold" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                <StackLayout Grid.Row="3" >
+                    <Label Text="{Binding ItemModel.Description}"
+                   Margin="15,0,15,0"                    
+                   HorizontalOptions="StartAndExpand" 
+                   FontSize="Small"
+                   TextColor="Black">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Lora-Regular" />
+                                <On Platform="Android" Value="Lora-Regular.ttf#Lora-Regular" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+            </Grid>
+        <Grid BackgroundColor="White" VerticalOptions="End" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="Dodaj u korpu"
+                    TextColor="Red"
+                    Grid.Column="0"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand"
+                    HeightRequest="50"
+                    BackgroundColor="Default"
+                    Command="{Binding AddToCart}">
+            </Button>
+            <Button Text="Kupi odmah"                    
+                    TextColor="Red"
+                     HeightRequest="50"
+                    Grid.Column="1"
+                    VerticalOptions="End"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Default"
+                    Command="{Binding Buy}">
+            </Button>
+        </Grid>
+    </Grid>
+</views:MvxContentPage>

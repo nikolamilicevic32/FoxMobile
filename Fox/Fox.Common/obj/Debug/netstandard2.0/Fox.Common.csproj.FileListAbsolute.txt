@@ -1,0 +1,13 @@
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\bin\Debug\netstandard2.0\Fox.Common.deps.json
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\bin\Debug\netstandard2.0\Fox.Common.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\bin\Debug\netstandard2.0\Fox.Common.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\bin\Debug\netstandard2.0\Xamarin.Forms.Core.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\bin\Debug\netstandard2.0\Xamarin.Forms.Platform.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\bin\Debug\netstandard2.0\Xamarin.Forms.Core.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\bin\Debug\netstandard2.0\Xamarin.Forms.Core.xml
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\obj\Debug\netstandard2.0\Fox.Common.csprojAssemblyReference.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\obj\Debug\netstandard2.0\Fox.Common.AssemblyInfoInputs.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\obj\Debug\netstandard2.0\Fox.Common.AssemblyInfo.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\obj\Debug\netstandard2.0\Fox.Common.csproj.CopyComplete
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\obj\Debug\netstandard2.0\Fox.Common.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Common\obj\Debug\netstandard2.0\Fox.Common.pdb

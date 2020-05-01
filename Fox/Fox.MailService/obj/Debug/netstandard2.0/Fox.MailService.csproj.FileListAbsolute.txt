@@ -1,0 +1,11 @@
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\bin\Debug\netstandard2.0\Fox.MailService.deps.json
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\bin\Debug\netstandard2.0\Fox.MailService.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\bin\Debug\netstandard2.0\Fox.MailService.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\bin\Debug\netstandard2.0\Fox.Common.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\bin\Debug\netstandard2.0\Fox.Common.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\obj\Debug\netstandard2.0\Fox.MailService.csprojAssemblyReference.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\obj\Debug\netstandard2.0\Fox.MailService.AssemblyInfoInputs.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\obj\Debug\netstandard2.0\Fox.MailService.AssemblyInfo.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\obj\Debug\netstandard2.0\Fox.MailService.csproj.CopyComplete
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\obj\Debug\netstandard2.0\Fox.MailService.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.MailService\obj\Debug\netstandard2.0\Fox.MailService.pdb

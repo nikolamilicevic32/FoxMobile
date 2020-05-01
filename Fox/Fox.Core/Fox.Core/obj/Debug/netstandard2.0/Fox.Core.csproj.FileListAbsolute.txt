@@ -1,0 +1,12 @@
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Fox.Core.csprojAssemblyReference.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Templates\Badge\BadgeView.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Views\CartPage.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Views\ContactsPage.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Views\HomeView.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Views\ItemPage.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Views\MasterDetailPage.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Views\MenuPage.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Views\ShipingDetailPage.xaml.g.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Fox.Core.AssemblyInfoInputs.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Core\Fox.Core\obj\Debug\netstandard2.0\Fox.Core.AssemblyInfo.cs

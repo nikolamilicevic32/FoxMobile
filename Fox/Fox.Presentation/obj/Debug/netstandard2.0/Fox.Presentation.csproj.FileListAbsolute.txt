@@ -1,0 +1,3 @@
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Presentation\obj\Debug\netstandard2.0\Fox.Presentation.csprojAssemblyReference.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Presentation\obj\Debug\netstandard2.0\Fox.Presentation.AssemblyInfoInputs.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.Presentation\obj\Debug\netstandard2.0\Fox.Presentation.AssemblyInfo.cs

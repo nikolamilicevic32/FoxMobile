@@ -1,0 +1,9 @@
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\bin\Debug\netstandard2.0\Fox.Common.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\bin\Debug\netstandard2.0\Fox.Common.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\obj\Debug\netstandard2.0\Fox.Repository.csprojAssemblyReference.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\obj\Debug\netstandard2.0\Fox.Repository.AssemblyInfoInputs.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\obj\Debug\netstandard2.0\Fox.Repository.AssemblyInfo.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\obj\Debug\netstandard2.0\Fox.Repository.csproj.CopyComplete
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\obj\Debug\netstandard2.0\Fox.Repository.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.RepositorySqlLite\obj\Debug\netstandard2.0\Fox.Repository.pdb

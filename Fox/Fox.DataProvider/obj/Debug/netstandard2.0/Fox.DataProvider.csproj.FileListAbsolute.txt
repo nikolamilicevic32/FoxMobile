@@ -1,0 +1,14 @@
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\bin\Debug\netstandard2.0\Fox.DataProvider.deps.json
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\bin\Debug\netstandard2.0\Fox.DataProvider.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\bin\Debug\netstandard2.0\Fox.DataProvider.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\bin\Debug\netstandard2.0\Fox.Common.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\bin\Debug\netstandard2.0\Mono.Android.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\bin\Debug\netstandard2.0\Fox.Common.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\bin\Debug\netstandard2.0\Mono.Android.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\bin\Debug\netstandard2.0\Mono.Android.xml
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\obj\Debug\netstandard2.0\Fox.DataProvider.csprojAssemblyReference.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\obj\Debug\netstandard2.0\Fox.DataProvider.AssemblyInfoInputs.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\obj\Debug\netstandard2.0\Fox.DataProvider.AssemblyInfo.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\obj\Debug\netstandard2.0\Fox.DataProvider.csproj.CopyComplete
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\obj\Debug\netstandard2.0\Fox.DataProvider.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.DataProvider\obj\Debug\netstandard2.0\Fox.DataProvider.pdb

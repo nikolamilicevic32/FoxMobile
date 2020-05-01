@@ -1,0 +1,145 @@
+﻿<views:MvxContentPage
+            x:Name="crtctx"
+            x:TypeArguments="viewModels:CartViewModel"
+            xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+            xmlns:viewModels="clr-namespace:Fox.Core.ViewModels;assembly=Fox.Core"
+            xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+            xmlns:views1="clr-namespace:Fox.Core.Views"
+            x:Class="Fox.Core.Views.CartPage">
+    <StackLayout x:Name="stack"
+        BackgroundColor="White">
+        <Frame BackgroundColor="White"
+               BorderColor="Black"
+               Padding="10">
+            <Label Text="{Binding TotalSum, StringFormat='Ukupno: {0:N} RSD'} "
+               HorizontalOptions="Center"
+                   VerticalOptions="Center"                   
+                    FontSize ="Medium"
+                   TextColor="Black">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Lato-Regular" />
+                        <On Platform="Android" Value="Lato-Regular.ttf#Lato-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </Frame>
+        <views1:ParrentCollectionView x:Name="ItemsListView" 
+                        ItemsSource="{Binding CartItems}"
+                        BackgroundColor="White"
+                        SelectionMode="Single"
+                        ParentBindingContext="{Binding RemoveFromCart}">
+            <views1:ParrentCollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                        Span="1" />
+            </views1:ParrentCollectionView.ItemsLayout>
+            <views1:ParrentCollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10 " RowSpacing="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="120"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Frame
+                            BorderColor="Black"
+                            Grid.RowSpan="1"
+                            Grid.ColumnSpan="3"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            IsClippedToBounds="True" >
+                        </Frame>
+                        <ffimageloading:CachedImage  
+                            Grid.Column="0"
+                            Margin="15,0,15,0"
+                            Aspect="AspectFit"
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="Center"			                                            
+                            WidthRequest="120" 
+                            HeightRequest="120"			                                            
+                            DownsampleToViewSize="true"			                                            
+                            Source ="{Binding Images[0].Content}"                                                      
+                            Grid.Row="0">
+                        </ffimageloading:CachedImage>
+                        <Grid Grid.Row="0" Grid.Column="1">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions >
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label  Margin="15,10,15,0"                               
+                                Grid.Row="0"
+                                Text="{Binding Name}"
+                                TextColor="Black"
+                                LineBreakMode="WordWrap"
+                                MaxLines="2"
+                                FontSize="16"
+                                HorizontalOptions="Center"
+                                HorizontalTextAlignment="Center">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Karla-Regular" />
+                                        <On Platform="Android" Value="Karla-Regular.ttf#Karla-Regular" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+                            <Label
+                                Grid.Row="1"
+                                Text="{Binding Price, StringFormat='{0:N} RSD'}"
+                                TextColor="Black"
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                HorizontalTextAlignment="Center">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Hind-Bold" />
+                                        <On Platform="Android" Value="Hind-Bold.ttf#Hind-Bold" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+                        </Grid>
+                        <Button  
+                            Text="X" 
+                            BackgroundColor="White"
+                            TextColor="Black" 
+                            FontSize="Medium" 
+                            Grid.Column="2"                                
+                            Command="{Binding ParentBindingContext, Source={x:Reference ItemsListView}}"
+                            CommandParameter="{Binding Id}"
+                            IsVisible="True"
+                            Margin="5"
+                            HeightRequest="20"/>
+                    </Grid>
+                </DataTemplate>
+            </views1:ParrentCollectionView.ItemTemplate>
+        </views1:ParrentCollectionView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0"
+                Text="Isprazni korpu"
+                BackgroundColor="Red"
+                TextColor="White"
+                Command="{Binding ClearCommand}">
+             </Button>
+             <Button Grid.Column="1"
+                    Text="Nastavi"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    Command="{Binding NextPage}">
+             </Button>
+        </Grid>
+    </StackLayout>
+</views:MvxContentPage>

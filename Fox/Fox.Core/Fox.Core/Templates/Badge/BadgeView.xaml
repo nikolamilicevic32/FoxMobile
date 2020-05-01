@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Grid xmlns="http://xamarin.com/schemas/2014/forms"
+      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+      xmlns:shared1="clr-namespace:Fox.Core"
+      x:Class="Fox.Core.Badge.BadgeView">
+    <shared1:CircleView
+        x:Name="BadgeCircle" 
+        HeightRequest="20" WidthRequest="60" 
+        CornerRadius="15"
+        BadgeCornerRadius="16"
+        VerticalOptions="Center"
+        HorizontalOptions="Center">
+    </shared1:CircleView>
+    <Label 
+        x:Name="BadgeLabel" 
+        TextColor="White"
+        VerticalOptions="Center" 
+        HorizontalOptions="Center"
+        VerticalTextAlignment="Center"
+        HorizontalTextAlignment="Center"
+        FontSize="10" />
+</Grid>

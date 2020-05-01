@@ -1,0 +1,127 @@
+<views:MvxContentPage x:TypeArguments="viewModels:HomeViewModel"
+            xmlns="http://xamarin.com/schemas/2014/forms" 
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:MvvmCross.Forms.Views;assembly=MvvmCross.Forms"
+            xmlns:viewModels="clr-namespace:Fox.Core.ViewModels;assembly=Fox.Core"
+            xmlns:ffimageloading="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+            xmlns:badge1="clr-namespace:Fox.Core.Badge"
+            x:Class="Fox.Core.Views.HomeView" >
+
+    <views:MvxContentPage.Resources>
+        <ResourceDictionary>
+			<Style TargetType="Grid">
+				<Setter Property="VisualStateManager.VisualStateGroups">
+					<VisualStateGroupList>
+						<VisualStateGroup x:Name="CommonStates">
+							<VisualState x:Name="Normal" />
+							<VisualState x:Name="Selected">
+								<VisualState.Setters>
+									<Setter Property="BackgroundColor" Value="White" />
+								</VisualState.Setters>
+							</VisualState>
+						</VisualStateGroup>
+					</VisualStateGroupList>
+				</Setter>
+			</Style>
+		</ResourceDictionary>
+    </views:MvxContentPage.Resources>
+
+    <StackLayout BackgroundColor="White">
+        <Picker ItemsSource="{Binding Categories}"
+                ItemDisplayBinding="{Binding Name}"
+                SelectedItem="{Binding SelectedCategory}"
+                FontAttributes="Bold"
+                TextColor="Black"
+                Title="Odaberi kategoriju"
+                TitleColor ="#4A4343"
+                Margin="10,5,10,0">
+            <Picker.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Karla-Regular" />
+                    <On Platform="Android" Value="Karla-Regular.ttf#Karla-Regular" />
+                </OnPlatform>
+            </Picker.FontFamily>
+        </Picker>
+        <CollectionView x:Name="ItemsListView" 
+                        ItemsSource="{Binding Items, Mode=OneWay}"
+                        BackgroundColor="White"
+                        SelectionChanged="DetailItemEvent"
+                        SelectionMode="Single">
+            <CollectionView.ItemsLayout>
+                <GridItemsLayout Orientation="Vertical"
+                        Span="2" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10 " RowSpacing="5">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="120"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="20"/>
+                            <RowDefinition Height="10"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="auto"/>
+                            <ColumnDefinition Width="auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Frame
+                            BorderColor="Black"
+                            Grid.RowSpan="4"
+                            CornerRadius="10"
+                            HasShadow="True"
+                            IsClippedToBounds="True" >
+                        </Frame>
+                        <ffimageloading:CachedImage                            
+                            Margin="15,0,15,0"
+                            Aspect="AspectFit"
+                            HorizontalOptions="FillAndExpand" 
+                            VerticalOptions="Center"			                                            
+                            WidthRequest="120" 
+                            HeightRequest="120"			                                            
+                            DownsampleToViewSize="true"			                                            
+                            Source ="{Binding Cover.Content}"                                                      
+                            Grid.Row="0">
+                        </ffimageloading:CachedImage>
+                        <badge1:BadgeView                              
+                            Text="NOVO" 
+                            BadgeColor="Red"        
+                            TextColor="White"
+                            VerticalOptions="StartAndExpand"
+                            HorizontalOptions="End"
+                            IsVisible="{Binding IsNew}">
+                        </badge1:BadgeView>
+                        <Label  Margin="15,0,15,0"                               
+                                Grid.Row="1"
+                                Text="{Binding Name}"
+                                TextColor="Black"
+                                LineBreakMode="WordWrap"
+                                MaxLines="2"
+                                FontSize="12"                                
+                                HorizontalOptions="FillAndExpand">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Karla-Regular" />
+                                    <On Platform="Android" Value="Karla-Regular.ttf#Karla-Regular" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                        <Label
+                                Grid.Row="2"
+                                Text="{Binding Price, StringFormat='{0:N} RSD'} "
+                                TextColor="Black"
+                                FontSize="Medium"
+                                FontAttributes="Bold"
+                                HorizontalTextAlignment="Center">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Hind-Bold" />
+                                    <On Platform="Android" Value="Hind-Bold.ttf#Hind-Bold" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+</views:MvxContentPage>

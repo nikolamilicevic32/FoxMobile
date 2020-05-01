@@ -1,0 +1,8 @@
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.CheckSystem\bin\Debug\netstandard2.0\Fox.CheckSystem.deps.json
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.CheckSystem\bin\Debug\netstandard2.0\Fox.CheckSystem.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.CheckSystem\bin\Debug\netstandard2.0\Fox.CheckSystem.pdb
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.CheckSystem\obj\Debug\netstandard2.0\Fox.CheckSystem.csprojAssemblyReference.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.CheckSystem\obj\Debug\netstandard2.0\Fox.CheckSystem.AssemblyInfoInputs.cache
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.CheckSystem\obj\Debug\netstandard2.0\Fox.CheckSystem.AssemblyInfo.cs
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.CheckSystem\obj\Debug\netstandard2.0\Fox.CheckSystem.dll
+C:\Users\Asus\Source\Repos\Fox.Mobile\Fox\Fox.CheckSystem\obj\Debug\netstandard2.0\Fox.CheckSystem.pdb
